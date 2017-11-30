@@ -15,6 +15,9 @@
 		11225ED61FCF9C78007C674C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225ED51FCF9C78007C674C /* main.m */; };
 		11225EE01FCF9C78007C674C /* HelloOpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225EDF1FCF9C78007C674C /* HelloOpenGLTests.m */; };
 		11225EEB1FCF9C78007C674C /* HelloOpenGLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225EEA1FCF9C78007C674C /* HelloOpenGLUITests.m */; };
+		11225EFA1FCF9CC1007C674C /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11225EF91FCF9CC1007C674C /* OpenGLView.m */; };
+		11225EFC1FCFA53A007C674C /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 11225EFB1FCFA53A007C674C /* SimpleVertex.glsl */; };
+		11225EFE1FCFA7DC007C674C /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 11225EFD1FCFA7DC007C674C /* SimpleFragment.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		11225EE61FCF9C78007C674C /* HelloOpenGLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloOpenGLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11225EEA1FCF9C78007C674C /* HelloOpenGLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloOpenGLUITests.m; sourceTree = "<group>"; };
 		11225EEC1FCF9C78007C674C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11225EF81FCF9CC0007C674C /* OpenGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		11225EF91FCF9CC1007C674C /* OpenGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		11225EFB1FCFA53A007C674C /* SimpleVertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		11225EFD1FCFA7DC007C674C /* SimpleFragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +110,10 @@
 			children = (
 				11225EC61FCF9C78007C674C /* AppDelegate.h */,
 				11225EC71FCF9C78007C674C /* AppDelegate.m */,
+				11225EF81FCF9CC0007C674C /* OpenGLView.h */,
+				11225EF91FCF9CC1007C674C /* OpenGLView.m */,
+				11225EFD1FCFA7DC007C674C /* SimpleFragment.glsl */,
+				11225EFB1FCFA53A007C674C /* SimpleVertex.glsl */,
 				11225EC91FCF9C78007C674C /* ViewController.h */,
 				11225ECA1FCF9C78007C674C /* ViewController.m */,
 				11225ECC1FCF9C78007C674C /* Main.storyboard */,
@@ -238,9 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11225EFC1FCFA53A007C674C /* SimpleVertex.glsl in Resources */,
 				11225ED31FCF9C78007C674C /* LaunchScreen.storyboard in Resources */,
 				11225ED01FCF9C78007C674C /* Assets.xcassets in Resources */,
 				11225ECE1FCF9C78007C674C /* Main.storyboard in Resources */,
+				11225EFE1FCFA7DC007C674C /* SimpleFragment.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +281,7 @@
 				11225ECB1FCF9C78007C674C /* ViewController.m in Sources */,
 				11225ED61FCF9C78007C674C /* main.m in Sources */,
 				11225EC81FCF9C78007C674C /* AppDelegate.m in Sources */,
+				11225EFA1FCF9CC1007C674C /* OpenGLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YDEVQQ22JR;
 				INFOPLIST_FILE = HelloOpenGL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tvunetworks.com.HelloOpenGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YDEVQQ22JR;
 				INFOPLIST_FILE = HelloOpenGL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tvunetworks.com.HelloOpenGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
